@@ -74,15 +74,16 @@ const counterObs = new IntersectionObserver((entries) => {
     if (!e.isIntersecting) return;
     const el = e.target;
     const target = parseInt(el.dataset.target);
+    const suffix = el.dataset.suffix || '';
     const duration = 1400;
     const start = performance.now();
     const animate = (now) => {
       const elapsed = now - start;
       const progress = Math.min(elapsed / duration, 1);
       const eased = 1 - Math.pow(1 - progress, 3);
-      el.textContent = Math.floor(eased * target);
+      const value = Math.floor(eased * target);
+      el.innerHTML = value + (progress >= 1 ? `<span class="stat-suffix">${suffix}</span>` : '');
       if (progress < 1) requestAnimationFrame(animate);
-      else el.textContent = target;
     };
     requestAnimationFrame(animate);
     counterObs.unobserve(el);

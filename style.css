@@ -149,7 +149,7 @@ a { text-decoration: none; color: inherit; }
 .mobile-link:hover { background: var(--pink-50); color: var(--pink-500); }
 
 /* ===== SECTION BASE ===== */
-section { padding: 110px 28px; }
+section { padding: 90px 28px; }
 .section-inner { max-width: 1140px; margin: 0 auto; }
 .section-label {
   font-size: 0.72rem;
@@ -160,9 +160,9 @@ section { padding: 110px 28px; }
   text-transform: uppercase;
 }
 .section-title {
-  font-size: 2.2rem;
+  font-size: 2rem;
   font-weight: 900;
-  margin-bottom: 52px;
+  margin-bottom: 40px;
   color: var(--gray-900);
   display: flex;
   align-items: center;
@@ -172,11 +172,11 @@ section { padding: 110px 28px; }
 
 /* card-hover generic */
 .card-hover {
-  transition: transform 0.28s cubic-bezier(.34,1.56,.64,1), box-shadow 0.28s;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 .card-hover:hover {
-  transform: translateY(-8px);
-  box-shadow: var(--shadow-lg);
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-md);
 }
 
 /* ===== HERO ===== */
@@ -245,12 +245,9 @@ section { padding: 110px 28px; }
   user-select: none;
   filter: drop-shadow(0 2px 8px rgba(255,100,160,0.3));
 }
-.deco1 { top: 12%; left: 4%; animation-delay: 0s; }
-.deco2 { top: 22%; right: 7%; animation-delay: 0.7s; }
-.deco3 { bottom: 28%; left: 6%; animation-delay: 1.2s; font-size: 3rem; }
-.deco4 { top: 58%; right: 4%; animation-delay: 1.8s; }
-.deco5 { bottom: 14%; right: 11%; animation-delay: 0.4s; }
-.deco6 { top: 40%; left: 2%; animation-delay: 2.2s; font-size: 1.8rem; }
+.deco1 { top: 15%; right: 7%; animation-delay: 0s; }
+.deco2 { top: 65%; right: 4%; animation-delay: 0.9s; font-size: 1.8rem; }
+.deco3 { bottom: 18%; left: 5%; animation-delay: 1.6s; }
 @keyframes floatDeco {
   0%, 100% { transform: translateY(0) rotate(0deg); }
   50% { transform: translateY(-14px) rotate(8deg); }
@@ -472,10 +469,11 @@ section { padding: 110px 28px; }
   margin-bottom: 8px;
   font-variant-numeric: tabular-nums;
 }
-.stat-money::after { content: '만'; font-size: 1.6rem; }
-.stat-num:not(.stat-money)[data-target="4"]::after { content: '회'; font-size: 1.4rem; }
-.stat-num:not(.stat-money)[data-target="5"]::after { content: '개'; font-size: 1.4rem; }
-.stat-num:not(.stat-money)[data-target="100"]::after { content: '%'; font-size: 1.4rem; }
+.stat-suffix {
+  font-size: 1.4rem;
+  font-weight: 900;
+  color: rgba(255,255,255,0.9);
+}
 .stat-label {
   font-size: 0.84rem;
   font-weight: 600;
@@ -560,8 +558,8 @@ section { padding: 110px 28px; }
 #projects { background: var(--white); }
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-  gap: 24px;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
 }
 .project-card {
   background: var(--pink-50);
