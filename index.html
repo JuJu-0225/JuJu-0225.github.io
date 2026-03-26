@@ -9,68 +9,96 @@
 </head>
 <body>
 
+  <!-- SCROLL PROGRESS -->
+  <div id="scroll-progress"></div>
+
   <!-- NAV -->
   <nav id="navbar">
     <div class="nav-inner">
       <span class="nav-logo">🐰 JuJu</span>
       <ul class="nav-links">
         <li><a href="#about">About</a></li>
+        <li><a href="#stats">Stats</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#awards">Awards</a></li>
         <li><a href="#activities">Activities</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
+      <button class="hamburger" id="hamburger" aria-label="메뉴">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <!-- mobile menu -->
+    <div class="mobile-menu" id="mobile-menu">
+      <a href="#about" class="mobile-link">About</a>
+      <a href="#stats" class="mobile-link">Stats</a>
+      <a href="#skills" class="mobile-link">Skills</a>
+      <a href="#projects" class="mobile-link">Projects</a>
+      <a href="#awards" class="mobile-link">Awards</a>
+      <a href="#activities" class="mobile-link">Activities</a>
+      <a href="#contact" class="mobile-link">Contact</a>
     </div>
   </nav>
 
   <!-- HERO -->
   <section id="hero">
+    <div class="hero-bg-blob blob1"></div>
+    <div class="hero-bg-blob blob2"></div>
+    <div class="hero-bg-blob blob3"></div>
+    <div class="sparkles" id="sparkles"></div>
     <div class="deco deco1">🐾</div>
     <div class="deco deco2">🌸</div>
     <div class="deco deco3">🐰</div>
     <div class="deco deco4">✨</div>
     <div class="deco deco5">🌷</div>
+    <div class="deco deco6">💗</div>
+
     <div class="hero-content">
-      <div class="hero-badge">PM을 희망하는 미래의 유망주</div>
+      <div class="hero-badge">🌟 PM을 희망하는 미래의 유망주</div>
       <h1 class="hero-name">이승주</h1>
       <p class="hero-sub">
-        개발을 이해하는 PM<br/>
-        <span>한국항공대학교 소프트웨어학과</span>
+        <span class="typewriter" id="typewriter"></span>
       </p>
+      <p class="hero-univ">한국항공대학교 소프트웨어학과</p>
       <div class="hero-tags">
         <span>🗂 PM</span>
         <span>☕ Java / Spring Boot</span>
         <span>☁️ AWS & 인프라</span>
         <span>🎨 Figma</span>
+        <span>🤖 바이브 코딩</span>
       </div>
       <div class="hero-btns">
-        <a href="#projects" class="btn btn-primary">프로젝트 보기</a>
-        <a href="#contact" class="btn btn-outline">연락하기</a>
+        <a href="#projects" class="btn btn-primary">프로젝트 보기 →</a>
+        <a href="#contact" class="btn btn-outline">연락하기 💌</a>
       </div>
     </div>
+
     <div class="hero-img-wrap">
+      <div class="hero-img-ring"></div>
       <img src="assets/profile.jpeg" alt="이승주 프로필" class="hero-img" />
-      <div class="hero-img-deco">🐾</div>
+      <div class="hero-badge-float award-float">🏆 수상 4회</div>
+      <div class="hero-badge-float pm-float">👑 PM</div>
     </div>
   </section>
 
   <!-- ABOUT -->
   <section id="about">
     <div class="section-inner">
+      <div class="section-label">WHO I AM</div>
       <h2 class="section-title">About Me <span>🐰</span></h2>
       <div class="about-grid">
-        <div class="about-card">
+        <div class="about-card card-hover">
           <div class="about-emoji">💡</div>
-          <h3>Who am I?</h3>
+          <h3>개발을 이해하는 PM</h3>
           <p>
-            개발을 직접 하면서 팀을 이끌어온 PM입니다.<br/><br/>
-            모든 팀 프로젝트에서 PM을 맡아 기획·발표·일정 관리를 담당했고,
-            백엔드(Java/Spring Boot)와 AWS 인프라를 직접 구축한 경험 덕분에
-            개발팀과 원활하게 소통할 수 있는 게 강점이에요.
+            Java·Spring Boot로 백엔드를 직접 구현하고, AWS 인프라를 구축하면서도
+            팀의 방향을 잡아온 PM입니다.<br/><br/>
+            기술적 맥락을 이해하기 때문에 개발팀과 빠르게 소통하고,
+            현실적인 일정과 우선순위를 제안할 수 있어요.
           </p>
         </div>
-        <div class="about-card">
+        <div class="about-card card-hover">
           <div class="about-emoji">🎓</div>
           <h3>Education</h3>
           <ul class="about-list">
@@ -90,14 +118,14 @@
             </li>
           </ul>
         </div>
-        <div class="about-card">
+        <div class="about-card card-hover highlight-card">
           <div class="about-emoji">🏆</div>
           <h3>Highlights</h3>
           <ul class="about-list">
             <li><span class="dot pink"></span><div>모든 팀 프로젝트 PM 담당</div></li>
-            <li><span class="dot pink"></span><div>수상 4회 (중소벤처기업부 우수상 포함)</div></li>
-            <li><span class="dot pink"></span><div>총학생회 기획국장 역임</div></li>
-            <li><span class="dot pink"></span><div>Boeing 참가팀 관리자</div></li>
+            <li><span class="dot pink"></span><div>수상 4회 (총 380만원)</div></li>
+            <li><span class="dot pink"></span><div>중소벤처기업부 우수상 수상</div></li>
+            <li><span class="dot pink"></span><div>총학생회 기획국장 · Boeing 참가팀 관리자</div></li>
             <li><span class="dot pink"></span><div>산학프로젝트 1등 · 학장상</div></li>
           </ul>
         </div>
@@ -105,41 +133,80 @@
     </div>
   </section>
 
+  <!-- STATS -->
+  <section id="stats">
+    <div class="stats-inner">
+      <div class="stat-item card-hover">
+        <div class="stat-num" data-target="4">0</div>
+        <div class="stat-label">🏆 수상 횟수</div>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item card-hover">
+        <div class="stat-num stat-money" data-target="380">0</div>
+        <div class="stat-label">💰 총 상금 (만원)</div>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item card-hover">
+        <div class="stat-num" data-target="5">0</div>
+        <div class="stat-label">📁 완료 프로젝트</div>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item card-hover">
+        <div class="stat-num" data-target="100">0</div>
+        <div class="stat-label">👑 PM 담당률 (%)</div>
+      </div>
+    </div>
+  </section>
+
   <!-- SKILLS -->
   <section id="skills">
     <div class="section-inner">
+      <div class="section-label">WHAT I CAN DO</div>
       <h2 class="section-title">Skills <span>🛠</span></h2>
       <div class="skills-grid">
-        <div class="skill-group">
+        <div class="skill-group card-hover">
           <div class="skill-group-title">🌟 유창해요</div>
           <div class="skill-tags">
             <span class="tag tag-hot">PM</span>
             <span class="tag tag-hot">국어 · 영어</span>
             <span class="tag tag-hot">바이브 코딩</span>
+            <span class="tag tag-hot">Figma</span>
           </div>
         </div>
-        <div class="skill-group">
+        <div class="skill-group card-hover">
           <div class="skill-group-title">💪 할 줄 알아요</div>
           <div class="skill-tags">
             <span class="tag">Java</span>
             <span class="tag">Spring Boot</span>
-            <span class="tag">AWS &amp; 인프라</span>
+            <span class="tag">AWS & 인프라</span>
             <span class="tag">Python</span>
             <span class="tag">JavaScript</span>
             <span class="tag">C / C++</span>
             <span class="tag">Git</span>
-            <span class="tag">Figma</span>
           </div>
         </div>
-        <div class="skill-group">
+        <div class="skill-group card-hover">
           <div class="skill-group-title">📚 배우고 있어요</div>
           <div class="skill-tags">
             <span class="tag tag-light">Kotlin</span>
             <span class="tag tag-light">Linux</span>
-            <span class="tag tag-light">HTML</span>
+            <span class="tag tag-light">HTML / CSS</span>
             <span class="tag tag-light">Android Studio</span>
             <span class="tag tag-light">Raspberry Pi</span>
           </div>
+        </div>
+      </div>
+
+      <!-- PM 차별점 -->
+      <div class="pm-diff card-hover">
+        <div class="pm-diff-icon">👑</div>
+        <div class="pm-diff-content">
+          <h3>왜 "개발하는 PM"인가요?</h3>
+          <p>
+            Spring Boot 백엔드와 AWS 인프라를 직접 구축하면서 개발 사이클 전반을 이해합니다.
+            덕분에 개발자와 대화할 때 기술적 제약을 먼저 파악하고, 현실적인 로드맵을 제시할 수 있어요.
+            기획·발표·일정관리부터 실제 구현까지 — 팀 전체를 조율하는 PM이 목표입니다.
+          </p>
         </div>
       </div>
     </div>
@@ -148,12 +215,13 @@
   <!-- PROJECTS -->
   <section id="projects">
     <div class="section-inner">
+      <div class="section-label">WHAT I BUILT</div>
       <h2 class="section-title">Projects <span>🌸</span></h2>
       <div class="projects-grid">
 
-        <!-- 꾸준 -->
-        <div class="project-card featured">
-          <div class="project-badge">🏆 1등 · 학장상</div>
+        <!-- 꾸준 (featured) -->
+        <div class="project-card featured card-hover">
+          <div class="project-ribbon">🏆 1등 · 학장상</div>
           <div class="project-header">
             <span class="project-emoji">🐌</span>
             <div>
@@ -163,20 +231,24 @@
           </div>
           <p class="project-desc">
             경계선 지능인(IQ 71~84) 약 700만 명을 위한 AI 기반 자립 지원 안드로이드 앱.
-            어휘 학습, 글 요약, 대화 코칭, AI 감정 일기, AI 챗봇 등 5가지 핵심 기능 제공.
-            Google Play Store 내부 테스트 트랙 배포 완료.
+            어휘 학습, 글 요약, 대화 코칭, AI 감정 일기, AI 챗봇 5가지 핵심 기능 제공.
+            전문가 3인 인터뷰 진행, Google Play Store 내부 테스트 배포 완료.
           </p>
-          <div class="project-role"><strong>역할:</strong> PM · 백엔드</div>
+          <div class="project-role-badge">PM · 백엔드</div>
           <div class="project-tags">
-            <span>Spring Boot</span><span>AWS (EB · EC2 · RDS · S3)</span>
+            <span>Spring Boot</span><span>AWS EB · EC2 · RDS · S3</span>
             <span>Kotlin / Android</span><span>Gemini AI</span>
             <span>GitHub Actions CI/CD</span>
           </div>
-          <a href="https://github.com/GreenSnail-kau" target="_blank" class="project-link">GitHub →</a>
+          <div class="project-footer">
+            <a href="https://github.com/GreenSnail-kau" target="_blank" class="project-link">GitHub →</a>
+            <!-- TODO: 꾸준 레포 링크 확정 시 교체 -->
+            <span class="project-award-chip">💰 900,000원</span>
+          </div>
         </div>
 
         <!-- 공주의 서재 -->
-        <div class="project-card">
+        <div class="project-card card-hover">
           <div class="project-header">
             <span class="project-emoji">📚</span>
             <div>
@@ -185,39 +257,43 @@
             </div>
           </div>
           <p class="project-desc">
-            멋쟁이 사자처럼 연합 동아리에서 진행한 웹 서비스 프로젝트.
-            백엔드 개발 및 팀 PM을 맡아 서비스 기획부터 배포까지 전 과정을 리드.
+            멋쟁이 사자처럼 연합 동아리 웹 서비스 프로젝트.
+            서비스 기획부터 Spring Security 기반 백엔드 배포까지 전 과정 리드.
           </p>
-          <div class="project-role"><strong>역할:</strong> PM · 백엔드</div>
+          <div class="project-role-badge">PM · 백엔드</div>
           <div class="project-tags">
-            <span>Spring Boot</span><span>Java</span><span>Spring Security</span><span>JPA</span>
+            <span>Spring Boot</span><span>Spring Security</span><span>JPA</span>
           </div>
-          <a href="https://github.com/JuJu-0225/Back-Princess" target="_blank" class="project-link">GitHub →</a>
+          <div class="project-footer">
+            <a href="https://github.com/Team-Fwaiya/Back-Princess" target="_blank" class="project-link">GitHub →</a>
+          </div>
         </div>
 
         <!-- 야너두 사장 -->
-        <div class="project-card">
-          <div class="project-badge">진행 중</div>
+        <div class="project-card card-hover">
           <div class="project-header">
             <span class="project-emoji">🏪</span>
             <div>
               <h3>야 너두 사장 될 수 있어</h3>
-              <small>멋쟁이 사자처럼 | 2025.01 ~ ing</small>
+              <small>멋쟁이 사자처럼 | 2025</small>
             </div>
           </div>
           <p class="project-desc">
-            창업 경험을 시뮬레이션하고 공유하는 서비스.
-            백엔드 개발을 완료하고 현재 서비스 고도화 진행 중.
+            창업 경험을 시뮬레이션하고 공유하는 플랫폼.
+            백엔드 전담 개발 및 AWS 배포 완료.
           </p>
-          <div class="project-role"><strong>역할:</strong> PM · 백엔드</div>
+          <div class="project-role-badge">PM · 백엔드</div>
           <div class="project-tags">
             <span>Spring Boot</span><span>Java</span><span>AWS</span>
+          </div>
+          <div class="project-footer">
+            <a href="https://github.com/kau-likelion-13th/sajang-be" target="_blank" class="project-link">GitHub →</a>
           </div>
         </div>
 
         <!-- 메이커스타 -->
-        <div class="project-card">
-          <div class="project-badge">🥈 우수상 · 200만원</div>
+        <div class="project-card card-hover">
+          <div class="project-ribbon ribbon-gold">🥈 우수상 · 200만원</div>
           <div class="project-header">
             <span class="project-emoji">⭐</span>
             <div>
@@ -226,17 +302,19 @@
             </div>
           </div>
           <p class="project-desc">
-            중소벤처기업부 주관 메이커스타 대회 참가 프로젝트.
-            PM, 프론트, 백엔드를 모두 담당하여 우수상 수상.
+            중소벤처기업부 주관 대회. PM·프론트·백엔드를 모두 담당하며 우수상 수상.
           </p>
-          <div class="project-role"><strong>역할:</strong> PM · 프론트 · 백엔드</div>
+          <div class="project-role-badge">PM · Full Stack</div>
           <div class="project-tags">
             <span>PM</span><span>Full Stack</span>
+          </div>
+          <div class="project-footer">
+            <span class="project-award-chip">💰 2,000,000원</span>
           </div>
         </div>
 
         <!-- 토스트아웃 -->
-        <div class="project-card">
+        <div class="project-card card-hover">
           <div class="project-header">
             <span class="project-emoji">🍞</span>
             <div>
@@ -245,10 +323,9 @@
             </div>
           </div>
           <p class="project-desc">
-            객체지향프로그래밍 수업 팀 프로젝트.
-            Java 기반으로 설계한 서비스.
+            Java 객체지향 설계 원칙을 적용한 팀 프로젝트.
           </p>
-          <div class="project-role"><strong>역할:</strong> PM · 개발</div>
+          <div class="project-role-badge">PM · 개발</div>
           <div class="project-tags">
             <span>Java</span><span>OOP</span>
           </div>
@@ -261,37 +338,43 @@
   <!-- AWARDS -->
   <section id="awards">
     <div class="section-inner">
+      <div class="section-label">ACHIEVEMENTS</div>
       <h2 class="section-title">Awards <span>🏅</span></h2>
-      <div class="awards-list">
-        <div class="award-item">
-          <div class="award-icon">🥇</div>
-          <div class="award-info">
-            <h3>산학 프로젝트 1등 <span class="award-prize">900,000원</span></h3>
-            <p>한국항공대학교 · 2025년 1학기 · PM / 백엔드</p>
-            <small>꾸준(GGUJUN) — 경계선 지능인 AI 자립 지원 앱 · 학장상 수령</small>
-          </div>
+      <div class="awards-podium">
+        <div class="podium-card podium-gold card-hover">
+          <div class="podium-icon">🥇</div>
+          <h3>산학 프로젝트 1등</h3>
+          <div class="podium-prize">900,000원</div>
+          <p>한국항공대학교 · 2025 1학기</p>
+          <p class="podium-role">PM / 백엔드 · 학장상</p>
+          <div class="podium-desc">꾸준(GGUJUN) — 경계선 지능인 AI 자립 지원 앱</div>
         </div>
-        <div class="award-item">
-          <div class="award-icon">🥈</div>
-          <div class="award-info">
-            <h3>2023 대한민국 메이커스타 우수상 <span class="award-prize">2,000,000원</span></h3>
-            <p>중소벤처기업부 · 2023년 2학기 · PM / 프론트 / 백엔드</p>
-          </div>
+        <div class="podium-card podium-silver card-hover">
+          <div class="podium-icon">🥈</div>
+          <h3>대한민국 메이커스타 우수상</h3>
+          <div class="podium-prize">2,000,000원</div>
+          <p>중소벤처기업부 · 2023 2학기</p>
+          <p class="podium-role">PM / 프론트 / 백엔드</p>
         </div>
-        <div class="award-item">
-          <div class="award-icon">🥈</div>
-          <div class="award-info">
-            <h3>Adventure Design 2등 <span class="award-prize">600,000원</span></h3>
-            <p>한국항공대학교 · 2024년 2학기 · PM</p>
-          </div>
+        <div class="podium-card podium-bronze card-hover">
+          <div class="podium-icon">🥈</div>
+          <h3>Adventure Design 2등</h3>
+          <div class="podium-prize">600,000원</div>
+          <p>한국항공대학교 · 2024 2학기</p>
+          <p class="podium-role">PM</p>
         </div>
-        <div class="award-item">
-          <div class="award-icon">🏆</div>
-          <div class="award-info">
-            <h3>ICT 창업경진대회 최우수상 <span class="award-prize">300,000원</span></h3>
-            <p>한국항공대학교 · 2023년 1학기 · PM / 프론트 / 백엔드</p>
-          </div>
+        <div class="podium-card podium-bronze card-hover">
+          <div class="podium-icon">🏆</div>
+          <h3>ICT 창업경진대회 최우수상</h3>
+          <div class="podium-prize">300,000원</div>
+          <p>한국항공대학교 · 2023 1학기</p>
+          <p class="podium-role">PM / 프론트 / 백엔드</p>
         </div>
+      </div>
+      <div class="awards-total card-hover">
+        <span>🎉 총 상금</span>
+        <strong>3,800,000원</strong>
+        <span>· 4회 수상 · 모든 프로젝트 PM 역할</span>
       </div>
     </div>
   </section>
@@ -299,10 +382,10 @@
   <!-- ACTIVITIES -->
   <section id="activities">
     <div class="section-inner">
+      <div class="section-label">EXPERIENCE</div>
       <h2 class="section-title">Activities <span>✨</span></h2>
       <div class="activities-grid">
-
-        <div class="activity-group">
+        <div class="activity-group card-hover">
           <h3>🏫 교내 활동</h3>
           <ul class="activity-list">
             <li>
@@ -311,7 +394,7 @@
             </li>
             <li>
               <span class="act-period">2025.09 ~ 2025.12</span>
-              <div><strong>Boeing 참가팀 관리자</strong><small>보잉 코리아 임직원 · 교수님들과 협력, 참가팀 전반 관리</small></div>
+              <div><strong>Boeing 참가팀 관리자</strong><small>보잉 코리아 임직원·교수진과 협력, 참가팀 전반 관리</small></div>
             </li>
             <li>
               <span class="act-period">2025.08 ~ 2025.12</span>
@@ -322,38 +405,43 @@
               <div><strong>산학프로젝트 조교</strong></div>
             </li>
             <li>
-              <span class="act-period">2024.01 ~</span>
-              <div><strong>제50·51대 총학생회 기획부원 / 기획부장</strong><small>학교 전반 행사 기획 및 진행, 홈페이지 관리</small></div>
-            </li>
-            <li>
-              <span class="act-period">2024.06 ~ 2024.11</span>
-              <div><strong>학식 모니터링단 팀장</strong><small>학식 품질 개선 TFT 팀장, 사장님 미팅 및 설문조사 진행</small></div>
-            </li>
-            <li>
               <span class="act-period">2024.09 ~ 2024.12</span>
               <div><strong>Adventure Design 팀장</strong><small>2등 달성, 학장상 수령</small></div>
             </li>
+            <li>
+              <span class="act-period">2024.06 ~ 2024.11</span>
+              <div><strong>학식 모니터링단 팀장</strong><small>학식 품질 개선 TFT — 사장님 미팅 및 설문조사 주도</small></div>
+            </li>
+            <li>
+              <span class="act-period">2024.01 ~</span>
+              <div><strong>제50·51대 총학생회 기획부원 / 기획부장</strong><small>학교 전반 행사 기획, 홈페이지 관리</small></div>
+            </li>
           </ul>
         </div>
-
-        <div class="activity-group">
+        <div class="activity-group card-hover">
           <h3>🌐 교외 활동</h3>
           <ul class="activity-list">
             <li>
-              <span class="act-period">2025.01 ~</span>
+              <span class="act-period">2025.01 ~ 2025.12</span>
               <div><strong>멋쟁이 사자처럼 연합동아리 임원진</strong><small>'야 너두 사장 될 수 있어' 백엔드 개발 완료</small></div>
             </li>
             <li>
               <span class="act-period">2025.07 ~ 2025.08</span>
-              <div><strong>웅진씽크빅 AI를 활용한 DT 기획자 1기</strong><small>수료 완료, 바이브 코딩을 활용한 개발 완료</small></div>
+              <div><strong>웅진씽크빅 AI를 활용한 DT 기획자 1기</strong><small>수료 완료, 바이브 코딩 기반 개발 완료</small></div>
             </li>
             <li>
               <span class="act-period">2025.06 ~ 2025.07</span>
-              <div><strong>시나공 서포터즈 17기</strong><small>수료 완료</small></div>
+              <div><strong>시나공 서포터즈 17기</strong><small>릴스 제작, 블로그 작성, 수료 완료</small></div>
+            </li>
+          </ul>
+          <h3 style="margin-top:32px;">📖 스터디</h3>
+          <ul class="activity-list">
+            <li>
+              <span class="act-period">2024.03 ~</span>
+              <div><strong>NALDA 스터디</strong><small>알고리즘·백준·전공 스터디 — 팀장 역임 (26-1학기)</small></div>
             </li>
           </ul>
         </div>
-
       </div>
     </div>
   </section>
@@ -361,25 +449,26 @@
   <!-- CONTACT -->
   <section id="contact">
     <div class="section-inner">
+      <div class="section-label">GET IN TOUCH</div>
       <h2 class="section-title">Contact <span>🌷</span></h2>
-      <div class="contact-card">
+      <div class="contact-card card-hover">
         <div class="contact-deco">🐰</div>
         <p class="contact-msg">함께 일하고 싶으시다면 편하게 연락주세요!</p>
         <div class="contact-links">
           <a href="mailto:alice2338@naver.com" class="contact-item">
-            <span>📧</span>
+            <span class="contact-icon">📧</span>
             <span>alice2338@naver.com</span>
           </a>
           <a href="mailto:lsj0225@kau.kr" class="contact-item">
-            <span>🎓</span>
+            <span class="contact-icon">🎓</span>
             <span>lsj0225@kau.kr</span>
           </a>
           <a href="https://github.com/JuJu-0225" target="_blank" class="contact-item">
-            <span>🐙</span>
+            <span class="contact-icon">🐙</span>
             <span>github.com/JuJu-0225</span>
           </a>
           <a href="https://fourth-bangle-533.notion.site/110dbca9ddea803a9f45d764e9e1a441" target="_blank" class="contact-item">
-            <span>📓</span>
+            <span class="contact-icon">📓</span>
             <span>Notion Portfolio</span>
           </a>
         </div>
@@ -387,10 +476,12 @@
     </div>
   </section>
 
-  <!-- FOOTER -->
   <footer>
     <p>🐾 Made with 💗 by 이승주 · 2026</p>
   </footer>
+
+  <!-- Back to top -->
+  <button id="back-to-top" aria-label="맨 위로">🐰</button>
 
   <script src="script.js"></script>
 </body>
