@@ -959,3 +959,30 @@ footer {
 
 /* be-float */
 .be-float { bottom: 30px; left: -30px; animation-delay: 1s; }
+
+/* ===== PROJECT DESC ===== */
+.project-desc {
+  font-size: 0.87rem;
+  color: var(--gray-600);
+  line-height: 1.75;
+  margin: -4px 0 4px;
+  font-style: italic;
+}
+
+/* ===== REASON ITEM (왜? 기술선택 이유) ===== */
+.project-bullets li.reason-item {
+  background: var(--indigo-50);
+  border-left: 3px solid var(--indigo-300);
+  border-radius: 0 8px 8px 0;
+  padding: 7px 12px 7px 14px;
+  color: var(--indigo-700);
+  font-size: 0.84rem;
+  line-height: 1.7;
+  margin-left: -18px;
+}
+.project-bullets li.reason-item::before {
+  display: none;
+}
+.project-bullets li.reason-item strong {
+  color: var(--indigo-600);
+}
