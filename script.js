@@ -32,7 +32,7 @@ document.querySelectorAll('.mobile-link').forEach(link => {
 const navbar = document.getElementById('navbar');
 window.addEventListener('scroll', () => {
   navbar.style.boxShadow = window.scrollY > 10
-    ? '0 4px 24px rgba(255,77,136,0.15)'
+    ? '0 4px 24px rgba(99,102,241,0.15)'
     : '';
 });
 
@@ -92,7 +92,7 @@ const counterObs = new IntersectionObserver((entries) => {
 counters.forEach(c => counterObs.observe(c));
 
 // ===== TYPEWRITER =====
-const phrases = ['개발을 이해하는 PM', '팀을 이끄는 기획자', '코딩하는 PM'];
+const phrases = ['서비스 완성도에 집착하는 백엔드 개발자', '기획부터 배포까지 직접 설계합니다', 'PM · Backend · QA — 한 번에'];
 let pi = 0, ci = 0, deleting = false;
 const tw = document.getElementById('typewriter');
 function type() {
